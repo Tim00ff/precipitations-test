@@ -36,6 +36,7 @@ void read(const char* file_name, prp_stuff* array[], int& size)
     }
     else
     {
+        
         throw "Ошибка открытия файла";
     }
 }

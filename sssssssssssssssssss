@@ -1,0 +1,35 @@
+[33mcommit d23714b99b20915f6ef9f8ee311766a73f3adcf4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 18:45:24 2023 +0300
+
+    fixed formating of data, and I actually forgot to add stuff ^^; oopsie
+
+[33mcommit d4376aea99cc6e7e186c6fc2b4efa4111870706a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 17:34:28 2023 +0300
+
+    Added headers for data structures
+
+[33mcommit 4f512d3c528ac83330ccd102146dbf36257aed4f[m[33m ([m[1;31morigin/data[m[33m, [m[1;32mdata[m[33m)[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 17:18:17 2023 +0300
+
+    Added starting dataset
+
+[33mcommit 67a91ca13cbdf60d90949583c2b89495d7d9951f[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 17:07:14 2023 +0300
+
+    Added few starting files for project
+
+[33mcommit 101a03fc75b1fa6b823dfdc564ef35674d1d6199[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 17:01:17 2023 +0300
+
+    Initialization of repository
+
+[33mcommit 40f4fa2a15792b327080f9d88de3bb3a38611f1e[m
+Author: Tim00ff <timuffir2@gmail.com>
+Date:   Mon Dec 11 16:47:11 2023 +0300
+
+    first commit
