@@ -42,12 +42,33 @@ int main()
         {
         case 1: only_rain(subscriptions, size); 
             break;
-        case 2 :
+        case 2 :low_volume(subscriptions, size);
             break;
         case 3 :
+        {
+            cout << "What is critecia for sorting" << endl << "1. volume of prepositions    2. Date";
+            int sort_id;
+            cin >> sort_id;
+            ShakerSort(subscriptions, size, sort_id);
             break;
+        }
+            
         case 4 : 
+        {
+            cout << "What is critecia for sorting" << endl << "1. volume of prepositions    2. Date";
+            int sort_id;
+            cin >> sort_id;
+            quickSort(subscriptions,0 , size - 1, sort_id, size);
+            for (int i = 0; i < size; i++)
+            {
+                cout << subscriptions[i]->prp_date.day << "  ";
+                cout << subscriptions[i]->prp_date.month << "  ";
+                cout << subscriptions[i]->prp_volume << "  ";
+                cout << subscriptions[i]->prp_type << "  ";
+                cout << '\n';
+            }
             break;
+        }
         case 5: rpts = false;
             break;
         }
