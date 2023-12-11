@@ -1,7 +1,38 @@
-#include <iostream>
+﻿#include <iostream>
+
+using namespace std;
+
+#include "prepositions.h"
+#include "file_reader.h"
+#include "constants.h"
 
 int main()
 {
-    std::cout << "Hello\n";
+    setlocale(LC_ALL, "Russian");
+    cout << "Laboratory N8. GIT\n";
+    cout << "Variant N3. Prepositions\n";
+    cout << "Author: Timofei Fedorchenko\n\n";
+    prp_stuff* subscriptions[MAX_FILE_ROWS_COUNT];
+    int size;
+    try
+    {
+        read("data.txt", subscriptions, size);
+        for (int i = 0; i < size; i++)
+        {
+            cout << subscriptions[i]->prp_date.day << "  ";
+            cout << subscriptions[i]->prp_date.month << "  ";
+            cout << subscriptions[i]->prp_volume << "  ";
+            cout << subscriptions[i]->prp_type << "  ";
+            cout << '\n';
+        }
+        for (int i = 0; i < size; i++)
+        {
+            delete subscriptions[i];
+        }
+    }
+    catch (const char* error)
+    {
+        cout << error << '\n';
+    }
     return 0;
 }
