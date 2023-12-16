@@ -5,6 +5,8 @@ using namespace std;
 #include "file_reader.h"
 #include "constants.h"
 #include "manipulations.h"
+#include "process.h"
+
 
 int main()
 {
@@ -36,7 +38,7 @@ int main()
     while (rpts == true)
     {
         cout << "What do you want to do next?" << endl << "1. When it was raining?" << endl << "2. When Preposition Volume was < 1.5";
-        cout << endl << "3. Do Shaker Sort and Print" << endl << "4. Do a Quick Sort and print" << endl << "5. Exit" << endl;
+        cout << endl << "3. Do Shaker Sort and Print" << endl << "4. Do a Quick Sort and print" << endl << "5. Exit" << endl << "6. Monthly prepositions" << endl;
         cin >> rpts_value;
         switch (rpts_value)
         {
@@ -69,8 +71,16 @@ int main()
             }
             break;
         }
-        case 5: rpts = false;
+        case 5:
+        {
+            rpts = false;
             break;
+        }
+        case 6:
+        {
+            monthly_prepositions(subscriptions, size);
+        }
+
         }
     }
     for (int i = 0; i < size; i++)
