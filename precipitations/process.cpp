@@ -4,12 +4,11 @@
 #include <iostream>
 using namespace std;
 
-float monthly_prepositions(prp_stuff* subscriptions[], int size)
+float monthly_prepositions(prp_stuff* subscriptions[], int size, int month)
 {
-	int month;
+	
 	float sum = 0;
-	cout << "enter the month you want to calculate" <<endl;
-	cin >> month;
+	
 	for (int i = 0; i < size; i++)
 	{
 		if (subscriptions[i]->prp_date.month == month)

@@ -79,7 +79,11 @@ int main()
         }
         case 6:
         {
-            monthly_prepositions(subscriptions, size);
+            int month;
+            cout << "enter the month you want to calculate" << endl;
+            cin >> month;
+            monthly_prepositions(subscriptions, size, month);
+
         }
 
         }
